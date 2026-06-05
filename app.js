@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AuraTodo JavaScript - Modular Application Controller & Sound Synthesis
+   DoDesk JavaScript - Modular Application Controller & Sound Synthesis
    ========================================================================== */
 
 // --- Application State ---
@@ -45,7 +45,7 @@ const DEFAULT_CATEGORIES = [
 const DEFAULT_TASKS = [
   {
     id: 'task-1',
-    title: 'Welcome to AuraTodo! 🌟',
+    title: 'Welcome to DoDesk! 🌟',
     description: 'This is a premium glassmorphic task manager. Explore priority tags, custom categories, due date alerts, and search.',
     categoryId: 'cat-personal',
     priority: 'medium',
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // --- Local Storage Operations ---
 function loadData() {
   // Load settings
-  const localSettings = localStorage.getItem('auratodo_settings');
+  const localSettings = localStorage.getItem('dodesk_settings');
   if (localSettings) {
     settings = JSON.parse(localSettings);
   }
@@ -253,28 +253,28 @@ function loadData() {
   updateSoundButtonUI();
 
   // Load categories
-  const localCats = localStorage.getItem('auratodo_categories');
+  const localCats = localStorage.getItem('dodesk_categories');
   if (localCats) {
     categories = JSON.parse(localCats);
   } else {
     categories = [...DEFAULT_CATEGORIES];
-    localStorage.setItem('auratodo_categories', JSON.stringify(categories));
+    localStorage.setItem('dodesk_categories', JSON.stringify(categories));
   }
 
   // Load tasks
-  const localTasks = localStorage.getItem('auratodo_tasks');
+  const localTasks = localStorage.getItem('dodesk_tasks');
   if (localTasks) {
     tasks = JSON.parse(localTasks);
   } else {
     tasks = [...DEFAULT_TASKS];
-    localStorage.setItem('auratodo_tasks', JSON.stringify(tasks));
+    localStorage.setItem('dodesk_tasks', JSON.stringify(tasks));
   }
 }
 
 function saveData() {
-  localStorage.setItem('auratodo_tasks', JSON.stringify(tasks));
-  localStorage.setItem('auratodo_categories', JSON.stringify(categories));
-  localStorage.setItem('auratodo_settings', JSON.stringify(settings));
+  localStorage.setItem('dodesk_tasks', JSON.stringify(tasks));
+  localStorage.setItem('dodesk_categories', JSON.stringify(categories));
+  localStorage.setItem('dodesk_settings', JSON.stringify(settings));
   
   // Save to synced file if linked
   if (fileHandle) {
@@ -337,9 +337,9 @@ async function linkLocalFile() {
           applyTheme(settings.theme);
           updateSoundButtonUI();
         }
-        localStorage.setItem('auratodo_tasks', JSON.stringify(tasks));
-        localStorage.setItem('auratodo_categories', JSON.stringify(categories));
-        localStorage.setItem('auratodo_settings', JSON.stringify(settings));
+        localStorage.setItem('dodesk_tasks', JSON.stringify(tasks));
+        localStorage.setItem('dodesk_categories', JSON.stringify(categories));
+        localStorage.setItem('dodesk_settings', JSON.stringify(settings));
         renderAll();
         showToast('JSON file synced and loaded!', 'success');
       } else {
@@ -972,7 +972,7 @@ function exportTasksToJSON() {
   
   const tempLink = document.createElement('a');
   tempLink.href = url;
-  tempLink.download = `auratodo_backup_${new Date().toISOString().split('T')[0]}.json`;
+  tempLink.download = `dodesk_backup_${new Date().toISOString().split('T')[0]}.json`;
   
   document.body.appendChild(tempLink);
   tempLink.click();
