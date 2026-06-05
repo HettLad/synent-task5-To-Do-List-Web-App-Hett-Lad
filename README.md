@@ -1,6 +1,6 @@
-# 🌟 AuraTodo - Elegant Glassmorphic Task Manager
+# 🌟 DoDesk - Elegant Glassmorphic Task Manager
 
-AuraTodo is a premium, serverless task management web application designed with a modern glassmorphic interface and micro-interactions. Operating entirely client-side, it combines automated LocalStorage persistence with an advanced **File System Access Sync** engine that reads and writes directly to local `.json` files.
+DoDesk is a premium, serverless task management web application designed with a modern glassmorphic interface and micro-interactions. Operating entirely client-side, it combines automated LocalStorage persistence with an advanced **File System Access Sync** engine that reads and writes directly to local `.json` files.
 
 ---
 
@@ -9,7 +9,7 @@ AuraTodo is a premium, serverless task management web application designed with 
 *   **Premium Glassmorphic UI:** Styled with deep translucent cards, layout blurs, glowing priority accents, and subtle borders.
 *   **Seamless Light/Dark Themes:** Optimized custom HSL color tokens for both themes, supporting instant switching and fluid CSS variable transitions.
 *   **Interactive Counter Stats:** Dashboard counters in the sidebar animate counts dynamically using numeric easing functions alongside a smooth progress tracking bar.
-*   **Micro-animations:** Custom CSS animations handle hover states, checklist inputs, card deletion transitions, and modal expansions.
+*   **Micro-interactions:** Custom CSS animations handle hover states, checklist inputs, card deletion transitions, and modal expansions.
 *   **Celebration Particles:** Renders custom canvas-confetti bursts on checkmarks and double-firework explosions upon completing all tasks.
 
 ---
@@ -56,8 +56,8 @@ AuraTodo is a premium, serverless task management web application designed with 
 
 ## ⚡ How to Run Locally
 
-Since AuraTodo is a serverless application, you do not need to compile or run npm scripts:
+Since DoDesk is a serverless application, you do not need to compile or run npm scripts:
 
 1.  Clone the repository or download the project files.
-2.  Open the project folder and double-click "index.html" to load it directly in any modern web browser.
+2.  Open the project folder and double-click **[index.html](file:///H:/OM/Synent%20Technologies%20Internship%20Project/ToDoList/index.html)** to load it directly in any modern web browser.
 3.  Ensure your device volume is enabled to hear the complete chimes and alarm alerts!
