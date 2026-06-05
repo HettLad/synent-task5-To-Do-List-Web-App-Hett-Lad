@@ -59,5 +59,5 @@ DoDesk is a premium, serverless task management web application designed with a 
 Since DoDesk is a serverless application, you do not need to compile or run npm scripts:
 
 1.  Clone the repository or download the project files.
-2.  Open the project folder and double-click **[index.html](file:///H:/OM/Synent%20Technologies%20Internship%20Project/ToDoList/index.html)** to load it directly in any modern web browser.
+2.  Open the project folder and double-click "index.html" to load it directly in any modern web browser.
 3.  Ensure your device volume is enabled to hear the complete chimes and alarm alerts!
